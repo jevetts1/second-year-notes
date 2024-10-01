@@ -20,6 +20,9 @@ Finite memory since it uses one bit.
 #### Flowchart
 Simple.
 
+#### Automaton
+![image](assets/automata-1.png)
+
 ### Is there an equal number of 0s and 1s?
 
 We can have a counter that increases on encountering a 1 and decreases on encountering a 0.
@@ -39,3 +42,16 @@ Unbounded for same reason.
 
 #### Flowchart
 More complex.
+
+# Map of semester 1
+![image](assets/semester-1-map.png)
+
+## Assessment
+
+Problem classes weekly - ungraded
+
+Coursework - 25%
+- Released week 7, due week 10
+
+Exam - 75% (summer 2025)
+- About as difficult as weekly exercises.
