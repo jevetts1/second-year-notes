@@ -6,5 +6,6 @@
 - due 29th nov
 
 ## Exam
+- in january
 - 70%
 - closed book written
