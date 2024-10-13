@@ -55,7 +55,7 @@ $$
 - The initial state must be 1 or 2 because the initial jump can mean we can start reading a word from state 2 as well.
 - $\phi$ is the empty set, and if we arrive there it is a dead set.
 - Any of our new sets of states that contain accepting states also become accepting states.
-- 
+
 ![](assets/2024-10-10-19-33-15.png)
 
 ### General Construction

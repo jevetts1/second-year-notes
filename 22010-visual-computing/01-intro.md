@@ -24,4 +24,4 @@
 - end of semester (5th may)
 - past exam questions
 - the content will be 30% semester 1, 70% semester 2
-
+- michael may give us mock exam in S2
