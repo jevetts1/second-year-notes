@@ -1,10 +1,23 @@
+<!-- vscode-markdown-toc -->
+* 1. [Theorem](#Theorem)
+* 2. [Algorithm - Powerset Construction](#Algorithm-PowersetConstruction)
+	* 2.1. [Example 1](#Example1)
+	* 2.2. [Example 2 - Jumps](#Example2-Jumps)
+	* 2.3. [General Construction](#GeneralConstruction)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
 # NFAs vs DFAs
 
 - NFAs are more flexible that DFAs.
   - Usually easier to construct a language using a NFA.
   - Powerful constructions such as or gates.
 
-## Theorem
+##  1. <a name='Theorem'></a>Theorem
 
 A language $L$ is accepted by some NFA if and only if it is accepted by some DFA.
 
@@ -12,11 +25,11 @@ So NFAs and DFAs accept the same set of languages.
 
 So any NFA can be converted to a DFA.
 
-## Algorithm - Powerset Construction
+##  2. <a name='Algorithm-PowersetConstruction'></a>Algorithm - Powerset Construction
 
 Input: a NFA $A$ $\to$ Output: a DFA $A'$ such that $L(A) = L(A')$
 
-### Example 1
+###  2.1. <a name='Example1'></a>Example 1
 
 Converting the following NFA into a DFA.
 
@@ -35,7 +48,7 @@ $a$ can be read from either state and return to the state $1$.
 $\set {1,2} -b\to \set {1,2}$
 $b$ can be read from state 1 and move to our new state $\set {1,2}$.
 
-### Example 2 - Jumps
+###  2.2. <a name='Example2-Jumps'></a>Example 2 - Jumps
 
 ![](assets/2024-10-10-19-13-32.png)
 
@@ -58,7 +71,7 @@ $$
 
 ![](assets/2024-10-10-19-33-15.png)
 
-### General Construction
+###  2.3. <a name='GeneralConstruction'></a>General Construction
 
 To transform a NFA $A = (Q, \Sigma, \Delta, s, F)$ to a DFA $A' = (Q', \Sigma, \delta, s', F')$:
 

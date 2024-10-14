@@ -1,10 +1,26 @@
+<!-- vscode-markdown-toc -->
+* 1. [Example 1](#Example1)
+* 2. [Example 2 - Jumps](#Example2-Jumps)
+* 3. [Formal Definition](#FormalDefinition)
+* 4. [Computations](#Computations)
+	* 4.1. [Formal Definition](#FormalDefinition-1)
+* 5. [Why NFAs are useful](#WhyNFAsareuseful)
+	* 5.1. [Example](#Example)
+	* 5.2. [Example 2](#Example2)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
 # Non Deterministic Finite Automata (NFA)
 
 In a DFA, given a state and a symbol from a word, the next state is already determined and the same every time.
 
 NFAs are easier to work with because you don't necessarily have to define transitions for every single symbol of the alphabet on every state. This makes it more readable for humans and easier to program.
 
-## Example 1
+##  1. <a name='Example1'></a>Example 1
 
 ![](assets/2024-10-08-18-46-20.png)
 
@@ -18,7 +34,7 @@ $abbb$ can be accepted by following $q_1 q_1 q_1 q_2$. This can also be rejected
 
 This is all to say that if there is some computation that leads to an accepting state at the end of a word then the word is accepted.
 
-## Example 2 - Jumps
+##  2. <a name='Example2-Jumps'></a>Example 2 - Jumps
 
 ![](assets/2024-10-08-18-53-03.png)
 
@@ -26,7 +42,7 @@ Remember the letter $e$ always means an empty word and is not a symbol of the al
 
 From $q_3$, you can either choose to read the $a$ and move to $q_1$ or you can jump to $q_1$ using the empty word and read the $a$ next.
 
-## Formal Definition
+##  3. <a name='FormalDefinition'></a>Formal Definition
 
 The 5 objects remain the same as DFA except $\delta$, which becomes:
 
@@ -46,7 +62,7 @@ $\Delta$ is a subset of all the triples of the states, the alphabet including th
 
 This may also be notated by $\delta: Q \times (\Sigma \cup \set {e}) \to P(Q)$
 
-## Computations
+##  4. <a name='Computations'></a>Computations
 
 One way of computing whether a word is accepted or not is to check all possible paths and if at least one is accepted then the word is accepted.
 - This can be a backtracking algorithm
@@ -63,7 +79,7 @@ Input: A word $w \in \Sigma^*$
 - If no transition is possible, kill the thread.
 4. Accept if any thread is accepted, else reject.
 
-### Formal Definition
+###  4.1. <a name='FormalDefinition-1'></a>Formal Definition
 
 $A$ accepts $w$ if there exists:
 
@@ -76,9 +92,9 @@ such that:
 2. $(r_i, y_{i+1}, r_{i+1}) \in \Delta$ for $i=0,...,n-1$
 3. $r_n \in F$
 
-## Why NFAs are useful
+##  5. <a name='WhyNFAsareuseful'></a>Why NFAs are useful
 
-### Example
+###  5.1. <a name='Example'></a>Example
 
 Let $L_1$ be a language over $\Sigma^* = \set {0,1}^*$ that has a 1 in the third position from the end.
 
@@ -88,7 +104,7 @@ In an NFA, we can have what a in DFA would be a "dead" state to read arbitrary a
 
 ![](assets/2024-10-08-19-22-14.png)
 
-### Example 2
+###  5.2. <a name='Example2'></a>Example 2
 
 If we want a language that accepts binary numbers with even numbers of 0s and/or even number of 1s, we can use the jump:
 
