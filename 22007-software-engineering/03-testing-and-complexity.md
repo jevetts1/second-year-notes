@@ -8,6 +8,11 @@
 
 # Testing
 
+Faults are in static source code or in documents, synonym for defect, bug, anomoly.
+
+Failures are triggered at run time.
+- This requires a fault to exist, but the failure isn't guaranteed to occur
+
 - White box testing is testing with the knowledge of how the code is written.
   - need algorithmic specifications to make sure code functions work
   - test limits of code, for example largest binary numbers for overflow testing
