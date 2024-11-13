@@ -95,8 +95,55 @@ The core of a coalitional game, denoted $\text {core}(N,v)$ is the collection of
 
 $$x(S) \geq v(S)$$
 
+This means that the agents do not have extra reward to leave the coalition structure and form their own. This makes the structure **stable**.
+
 for every $S$. 
 
-### Ice cream example 
+### Core of Superadditive Games
+
+#### Example
+
+Remember, Charlie has £3, Marcie has £4 and Pattie has £5.
+
+We build the following inequalities based on what each coalition of agents would be able to afford. 
 
 ![](assets/2024-11-04-15-11-27.png)
+
+Below are some example solutions. They both satisfy the system of inequalities. This means the core is not empty, and this can be used to distribute rewards to the players and for them to remain stable. 
+
+#### Formal definition
+
+The **core** is the set of all vectors that satisfy:
+
+- $x_i \geq 0$ for all $i \in N$
+- $x(N) = v(N)$
+    - the value that you distribute to  all the players is equal to the value  of the grand coalition
+- $x(S) \geq v(S)$ for all $S \subseteq N$
+    - the value that you distribute to a coalition $S$ must be greater than or equal to the value of $v(S)$ for all coalitions. 
+
+If x satisfies all these, then $x$ is in the core. 
+
+## The Shapley Value
+
+The Shapley Value can fix the problem of not having a core. Players are payed according to their contribution formed by their predecessors:
+
+- Player 1 receives $v(\set {1})$
+- Player 2 receives $v(\set {1, 2}) - v(\set {1})$
+- Player 3 receives $v(\set {1, 2, 3}) - v(\set {1, 2})$
+- etc.
+
+This payoff scheme distributes the value of the grand coalition among the agents. However, if two agents play symmetric roles but are in different places in the above calculations, they may receive different rewards. This makes this method unfair. 
+
+This could be remedied by doing this process on all permutations of agents, summing and averaging. This is very computationally intensive. $(n!)$
+
+The marginal contribution of an agent is:
+
+![](assets/2024-11-11-17-55-53.png)
+
+The shapley value is the process described above involving every permutation. 
+
+![](assets/2024-11-11-17-56-23.png)
+
+plus some boring ass shapley value properties in the lecture that you can watch when revising
+
+you dumb piece of shit this isn't my fault you decided not to watch it!
