@@ -37,6 +37,10 @@ The objective function is to minimise the squared error distance between points 
     - something to do with complex boundaries?
 - very easy to get stuck in local minima
 
+![](assets/2025-01-31-09-41-24.png)
+
+Clusters are enclosed in a convex region: reduces ability to create complex decision boundaries. 
+
 ## K-Means ++
 
 Select a datapoint as the first centroid randomly, and then set the next centroid as the furthest datapoint away from it. This aims to maximise the spread of the initial clusters to encourage convergence.
