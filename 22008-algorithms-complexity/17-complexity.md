@@ -15,3 +15,4 @@ $$f(n) = 2n + 1$$
 We choose $g(n) = n$, because we can select $c=3$ such that $f(n) < cg(n)$ for all $n$. So the complexity of $f$ is $O(g(n)) = O(n)$. 
 
 You can also choose to look at the average time complexity, and the space complexity, for memory. 
+
