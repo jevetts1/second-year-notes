@@ -12,7 +12,7 @@
 # 2. What were the NNs?
 
 1. Rollout Policy $\pi$
-    - Super fast inference - $2 \mu$s
+    - Super fast inference - $2 \mu$s (1000 simulations per second!)
     - Lower accuracy ~24%
     - Used linear softmax classification
     - Small pattern features as input and produced a distribution over legal moves
@@ -33,9 +33,11 @@
 
 # 3. Inputs 
 
-30,000,000 dataset, and self play dataset
+30,000,000 dataset, and self play dataset.
 
 ## SL, RL, and Value network
+
+Features for SL, RL and value network were all organised into 19x19 planes described below.
 
 ![](assets/2025-02-26-12-20-44.png)
 
@@ -58,6 +60,13 @@ Uses pattern data
     - $Q$ is a function of number of visits and the value assigned by the Value network.
     - $u(P)$ is a bonus function of the prior probability (calculated by the larger SL network) and the number of visits
 - Once a leaf node is reached, use larger SL network to calculate prior probabilities
+- Now we evaluate the leaf node we are at.
+    - First with the value network
+    - Second by playing a simulation using fast rollout to select moves.
+    - Simulations are run in parallel on different threads
+- The results of the simulations (win/loss) are backpropagated through the tree, updating the values of the nodes   
+    - Since simulations run in parallel, values are first updated to reduce their score to discourage other threads from running the same moves.
+- Finally, at the end of the search, the node with the maximum *visit count* is chosen, since the action value can be misleading by having outliers
 
 ## Low(ish) level
 
@@ -79,15 +88,16 @@ Uses pattern data
 
 
 
-
-
 # 5. How is the RL policy trained?
 
 - The weights from the pre-trained SL policy and copied to the new RL policy
 - The policy plays previous iterations of itself
     - The previous iterations are randomly selected
     - This prevents overfitting to the current policy's play
-
-- the loss function
+- Every 500 games, the current weights are added to the opponent pool
 
 # 6. Results
+
+- Each program had ~5s computation time (authors tried to maximise the hardware each program could support)
+- Handicap game where opponents had 4 extra stones
+- AlphaGo beat Fan Hui 5-0 in formal matches, with rules chosen by him.
