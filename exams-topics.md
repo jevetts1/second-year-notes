@@ -29,7 +29,7 @@ Lab notebooks
 
 ## Visual Computing
 
-50% Exam
+50% Exam - MCQ
 
 "Computer Vision" past papers
 

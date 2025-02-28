@@ -22,3 +22,5 @@ $$\phi := \phi - \alpha \frac{\partial L}{\partial\phi}$$
 
 Compute gradient based on only a subset of points - a mini batch. Instead of summing all the gradients for all the points to update parameters, update parameters using a **subset of the dataset**. Across an epoch, all the datapoints are used, so the mini-batches add up to the dataset. 
 - The loss function is slightly different for every mini batch, so gradients are (almost) always different. This adds a level of randomness that helps avoid local optima.
+- Learning rate schedule - decrease LR over time
+- More computationally cheap
