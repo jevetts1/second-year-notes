@@ -28,3 +28,8 @@ We change our notation to represent the network as matrices and vectors.
 And we can represent the vectors and matrices by using different greek letters:
 
 ![](assets/2025-02-26-10-39-31.png)
+
+## Shallow vs Deep
+
+- Deep NNs create more linear regions per parameter than shallow networks
+- Shallow NNs can approximate any function, as can deep NNs, but deep NNs can do so more efficiently, while shallow NNs exponentially require more parameters.
