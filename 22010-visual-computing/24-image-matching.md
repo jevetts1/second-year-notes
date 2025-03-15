@@ -24,4 +24,11 @@ Assumptions: image is only
 Normalised CC: subtract mean from both template and image and divide by the square root of the square of both.
     - 1 is exact match
 
-    
+- Exhaustive search: correlating the template over the entire image and find the highest value for $u$ and $v$.
+    - Sliding window approach.
+
+### Course to Fine - Image Pyramid
+
+![](assets/2025-03-12-10-06-03.png)![](assets/2025-03-12-10-06-04.png)
+
+Iteratively resize the image, from small to large. The match gives the intialisation for the next step - this avoids searching the entire image.
