@@ -73,6 +73,19 @@ Since values can be less that 0, shift the range from $0 \to 255$ to $-128 \to 1
 
 ### Canny Edge Detector
 
+- Uses gradient and laplacian. 
+
+1. Smooth image with 2D gaussian: $n_{\sigma} * I$
+2. Computer gradients using Sobel operator: $\nabla (n_{\sigma}) * I$
+3. Find gradient magnitude at each pixel: $\|\nabla (n_{\sigma}) * I\|$
+4. Find gradient orientation at each pixel: $\hat n = \frac{\nabla (n_{\sigma}) * I}{\|\nabla (n_{\sigma}) * I\|}$
+5. Compute 1D laplacian along the direction of the gradient: $\frac{\partial^2 (n_{\sigma} * I)}{\partial \hat n ^2}$ (second derivative of smoothed image with respect to gradient directions)
+6. Find zero crossings in Laplacian to find the edge locations. 
+
+The $\sigma$ parameter of the gaussian significantly affects how edges are detected - lower $\sigma$ detects finer edges, and increasing it makes edges less fine. 
+
+![](assets/2025-04-11-16-46-50.png)
+
 ### Corners
 
 Harris corner response function

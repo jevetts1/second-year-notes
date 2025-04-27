@@ -16,7 +16,7 @@ Find a special property that all regular languages have and show that non regula
 
 Consider the properties "is regular", $R$, and "can be pumped", $P$. Being pumped is a looping property. These properties have the relationship $R \subset P$, so proving that a language cannot be pumped means it is certainly not a regular language.
 
-Our property is that *all sufficient long words can be pumped*.
+Our property is that *all sufficiently long words can be pumped*.
 
 ## Pumping
 

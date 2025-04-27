@@ -69,7 +69,7 @@ $$
 So our new updated parameters are:
 
 $$
-\theta _j = \theta _j - \alpha \frac {\partial J(\theta)} {\partial \theta _h}
+\theta _j = \theta _j - \alpha \frac {\partial J(\theta)} {\partial \theta _j}
 $$
 
 $\alpha$ is the learning rate. The derivative is the derivative of the cost function with respect to the parameter being updated. We subtract the gradient to step down towards a lower cost function.

@@ -21,7 +21,7 @@ Assumptions: image is only
 2. Changed in brightness
 3. Changed in contrast
 
-Normalised CC: subtract mean from both template and image and divide by the square root of the square of both.
+- Normalised CC: subtract mean from both template and image and divide by the square root of the square of both.
     - 1 is exact match
 
 - Exhaustive search: correlating the template over the entire image and find the highest value for $u$ and $v$.
