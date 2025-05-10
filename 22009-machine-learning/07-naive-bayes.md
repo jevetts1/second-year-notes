@@ -33,7 +33,7 @@ Green is yes, red is no.
 
 #### Given 10mm of rainfall, will majority bus?
 
-First, make a $P(A)$ guess. 65% of the rows are "yes", so guess $P(A) = 0.65$.#
+First, make a $P(A)$ guess. 65% of the rows are "yes", so guess $P(A) = 0.65$.
 
 Next, to get $P(B|A)$, check $10$ against our distribution and find the likelihood:
 

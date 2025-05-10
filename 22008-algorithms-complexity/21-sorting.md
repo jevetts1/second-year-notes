@@ -6,7 +6,7 @@ Loop invariant
 
 ## Loop Invariant
 
-```
+```python
 ...
 setup_code();
 ...

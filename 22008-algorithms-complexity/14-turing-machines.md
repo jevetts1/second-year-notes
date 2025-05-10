@@ -33,7 +33,7 @@ A TM consists of six objects: $(Q, \Sigma, \Sigma _0, s, \delta, H)$ where:
 
 ### Configuration
 
-The configuration is how the TM starts. It is defined as a tuple $(q,u,a,v)$ where $q \in Q$, $u, v \in \Sigma ^*$, and $a \in \Sigma$ such that uav is a word starting with $\triangle$. 
+The configuration is how the TM starts. It is defined as a tuple $(q,u,a,v)$ where $q \in Q$, $u, v \in \Sigma ^*$, and $a \in \Sigma$ such that $uav$ is a word starting with $\triangle$. 
 
 A TM halts on a word if there is a sequence of configurations that ends with $q \in H$. 
 
