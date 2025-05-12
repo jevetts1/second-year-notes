@@ -151,6 +151,6 @@ To avoid having gaps in the pixels due to rounding the transformed coordinates, 
 
 ![](assets/2024-11-12-18-12-00.png)
 
-### Binlinaer interpolation
+### Binlinear interpolation
 
 ![](assets/2024-11-12-18-16-31.png)

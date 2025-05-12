@@ -45,7 +45,7 @@ $$\mathcal {F}[g](\omega) = e^{-ia\omega} \mathcal {F}[f](\omega)$$
 
 The convolution $f*g$ of two functions $f$ and $g$ is given by:
 
-$$(f*g)(x) = \int \limits _{-\infty} ^\infty f(x-y)(g(y)$$
+$$(f*g)(x) = \int \limits _{-\infty} ^\infty f(x-y)(g(y))$$
 
 ![](assets/2024-10-28-20-32-46.png)
 
