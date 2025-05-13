@@ -2,7 +2,7 @@
 
 ## Example filter functions
 
-$I(x,y) \to f(I(x,y)$
+$I(x,y) \to f(I(x,y))$
 
 The filter is applied to each pixel individually.
 
