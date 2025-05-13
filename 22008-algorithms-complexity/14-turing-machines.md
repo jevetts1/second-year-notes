@@ -11,7 +11,7 @@ The turing machine has tape memory, has full computing power and cannot solve th
 - The **head**: points to the position in tape memory.
     - holds the state and position in memory.
     - the state of the head and the item in memory decide what happens next, either move left, right or change what is written in the current cell. 
-- The **tape**: the infinite memory that is made up of discrete cells, does not continue to left but infinitely to the right.
+- The **tape**: the infinite memory that is made up of discrete cells
 
 ### Turing Machine as a State Diagram
 

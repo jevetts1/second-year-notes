@@ -4,7 +4,7 @@ Joint and conditional probability. Ez
 
 Product rule: 
 $p(s,y) = p(y|s)p(s) = p(s|y)p(y)$ for dependent variables
-$p(s,y) = p(s)p(s)$ for independent variables
+$p(s,y) = p(s)p(y)$ for independent variables
 
 Bayes' Rule: 
 $p(s|y) = \frac {p(y|s)p(s)} {p(y)}$ 
