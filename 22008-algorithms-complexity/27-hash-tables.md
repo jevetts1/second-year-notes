@@ -34,7 +34,7 @@ If your hash table gets too full (over the limit $\alpha$ that you want to set, 
 - Create new array
 - Rehash every item in the old array
 
-Amortized complexity doesn't change, when using strategies like the doubling size strateg.
+Amortized complexity doesn't change, when using strategies like the doubling size strategy.
 
 ## Open Addressing
 
