@@ -8,7 +8,7 @@ Matrix decomposition or factorisation is the task of separating a matrix X into 
 
 Any matrix $X \in \mathbb {R} ^{n \times d}$ can be written as $X = SVD^T$.
 
-- $S \in {R} ^{n \times d}$ is a matrix with an orthonormal basis as its columns
+- $S \in {R} ^{n \times k}$ is a matrix with an orthonormal basis as its columns
 - $V \in {R} ^{k \times k}$ is a diagonal matix with the ordered singluar values of $X$ in its diagonal
 - $D \in {R} ^{d \times k}$ is a matrix with an orthonormal basis as its columns.
 
@@ -45,9 +45,9 @@ The compression scheme of SVD tries to fill out values using patterns in the mat
 
 Covariance matrix of $X$ is $X^TX \in \mathbb{R} ^{d \times d}$
 
-$$X^TX = DVS^TSVD$$
+$$X^TX = DVS^TSVD^T$$
 
-$$= DV^2D$$
+$$= DV^2D$$ 
 
 (because $S$ is orthogonal, so it's dot product is $I$).
 

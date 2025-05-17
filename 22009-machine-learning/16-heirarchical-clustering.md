@@ -20,7 +20,7 @@ Hierarchical Clustering
     - Average linkage: mean distance between members of clusters
 4. These steps are repeated until all datapoints are in one cluster
 
-# VS Divisive
+# vs Divisive
 - Slightly more expensive computationally
 - More flexible in defining distance metrics using the linkage
 - Easier to implement
