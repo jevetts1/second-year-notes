@@ -36,7 +36,7 @@ To fit the curves smoothly, we want to specify:
 
 The shape matrix $C$ is broken down into two matrics: $G$, a 1x4 geometry matrix, and $M$, a 4x4 basis matrix, such that $C = GM$.
 
-$$p(t) = \left [ \begin {array} {} p(0) & p(1) & p'(0) & p'(1) \end {array} \right ]MQ(t)$$
+$$p(t) = \left [ \begin {array} {} p(0) & p(1) & p'(0) & p'(1) \end {array} \right ]Q(t)$$
 
 This is how the blending matrix is derived:
 

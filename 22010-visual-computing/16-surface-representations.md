@@ -15,8 +15,8 @@ Calculating implicit representations for 3d surfaces is intractable.
 
 ## Boolean Operations on implicit surfaces
 
-- Union of 2 surfaces: $f(\vec{x}) = min(f_1(\vec{x}), f_2(\vec{x}))$
-- Intersection of 2 surfaces: $f(\vec{x}) = max(f_1(\vec{x}), f_2(\vec{x}))$
+- Union of 2 surfaces: $f(\vec{x}) = \min(f_1(\vec{x}), f_2(\vec{x}))$
+- Intersection of 2 surfaces: $f(\vec{x}) = \max(f_1(\vec{x}), f_2(\vec{x}))$
 
 ## Sampling implicit surface representation
 
@@ -40,8 +40,8 @@ The position of the cut vertices is computed by linear interpolation.
 ## Subdivision Surfaces
 
 Creates smooth surfaces on top of a course mesh. The mesh is recursively refined to achieve a smooth surface. This is done by either:
-    - approximation - original vertices are moved to new positions
-    - interpolation - new vertices are created to smooth the mesh
+- approximation - original vertices are moved to new positions
+- interpolation - new vertices are created to smooth the mesh
 
 ![](assets/2025-01-31-14-47-17.png)
 

@@ -41,3 +41,7 @@ Concept (model) drift happens when mapping from input to output changes over tim
 ## Modern Technologies
 
 Most data science operates on the cloud. These applications allow you to integrate model pipelines with data pipelines. 
+
+Plug and play 
+
+Lots of by products
